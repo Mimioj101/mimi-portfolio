@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+body { 
+	background-color: #222; 
+	color: #FFF; 
+	font-family: 'Saira', sans-serif; 
+	font-weight: 700;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+	margin: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#mimi-ojserkis {
+	display: block;
+	position: relative;
+  font-size: 100px;
+  background: linear-gradient(to bottom,  #00f2ff 0%,#e2fbff 50%,#0a343f 51%,#0094f7 100%);
+	background-blend-mode: multiply;
+	background-size: 10px 100px;
+	background-repeat: repeat;
+	line-height: 1;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#mimi-ojserkis::before {
+		background: none;
+		content: attr(data-text);
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: +2;
+		background-image: url('https://i.imgur.com/Ym9HCsT.gif');
+		background-blend-mode: screen;
+		-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+		opacity: 0.5;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#mimi-ojserkis::after {
+  background: none;
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-shadow: 1px -1px 0 rgba(255,255,255,0.5),
+               3px 1px 3px rgba(255,0,255,0.85), 
+               -3px -2px 3px rgba(0,0,255,0.85),
+               1px -2px 0 rgba(255,255,255,0.8);
+  z-index: -2;
 }
