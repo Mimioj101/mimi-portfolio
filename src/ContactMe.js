@@ -15,8 +15,8 @@ class ContactMe extends React.Component {
                 <div className="window-body">
                     <p>Email: <a href="mailto: mimioj@gmail.com">mimioj@gmail.com</a></p>
                     <p>Phone: 609-457-7718</p>
-                    <p>LinkedIn: https://www.linkedin.com/in/mimio/</p>
-                    <p>Github: https://github.com/Mimioj101</p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/mimio/" target="_blank" rel="noreferrer noopener">linkedin.com/in/mimio</a></p>
+                    <p>Github: <a href="https://github.com/Mimioj101" target="_blank" rel="noreferrer noopener">github.com/Mimioj101</a></p>
                 </div>
             </div>
         )
