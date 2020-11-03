@@ -1,8 +1,5 @@
 import React from "react"
 
-// let width = window.innerWidth;
-// let height = window.innerHeight;
-
 class ContactMe extends React.Component {
     constructor(props) {
         super(props);
