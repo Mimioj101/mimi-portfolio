@@ -56,3 +56,8 @@ body {
 	position: absolute;
 	width: 200px;
 }
+
+#resume-window {
+	position: absolute;
+	width: 520px;
+}
