@@ -62,7 +62,7 @@ class Resume extends React.Component {
                 <div className="window-body">
                     <img src="resume-img.png" width="500px" />
                     {/* <iframe title="Resume" src="MRO Resume 11-02.pdf" width="500px" height="700px"/> */}
-                </div>uy
+                </div>
             </div>
         )
     }
