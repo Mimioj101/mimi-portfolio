@@ -54,9 +54,13 @@ body {
 #contact-me-window {
 	position: absolute;
 	width: 200px;
+	top: 100px;
+	left: 100px;
 }
 
 #resume-window {
 	position: absolute;
 	width: 517px;
+	top: 50px;
+	left: 650px;
 }
