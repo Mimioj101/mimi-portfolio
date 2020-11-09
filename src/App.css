@@ -63,6 +63,14 @@ body {
 	width: 517px;
 	top: 50px;
 	left: 700px;
+	z-index: 0;
+}
+
+#paint-window {
+	position: absolute;
+	top: 250px;
+	left: 330px;
+	width: 670px;
 }
 
 #icons-container {

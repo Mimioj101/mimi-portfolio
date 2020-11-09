@@ -4,6 +4,7 @@ import ContactMe from './ContactMe.js'
 import Resume from './Resume.js'
 import NavBar from './Navbar.js'
 import IconsContainer from './IconsContainer.js'
+import Paint from './Paint.js'
 
 class App extends React.Component {
 
@@ -14,6 +15,8 @@ class App extends React.Component {
         {/* <NavBar /> */}
         <ContactMe />
         <Resume />
+        <Paint />
+        {/* <iframe src="https://jspaint.app" ></iframe> */}
         <IconsContainer />
       </div>
     );
