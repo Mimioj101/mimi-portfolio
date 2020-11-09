@@ -3,6 +3,7 @@ import './App.css';
 import ContactMe from './ContactMe.js'
 import Resume from './Resume.js'
 import NavBar from './Navbar.js'
+import IconsContainer from './IconsContainer.js'
 
 class App extends React.Component {
 
@@ -13,6 +14,7 @@ class App extends React.Component {
         {/* <NavBar /> */}
         <ContactMe />
         <Resume />
+        <IconsContainer />
       </div>
     );
   }
