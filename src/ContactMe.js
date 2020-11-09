@@ -49,7 +49,7 @@ class ContactMe extends React.Component {
         return(
             <div className="window" id="contact-me-window" style={this.state.styles} onMouseDown={this._dragStart} onMouseMove={this._dragging} onMouseUp={this._dragEnd} >
                 <div className="title-bar">
-                    <div className="title-bar-text">Contact Mimi</div>
+                    <div className="title-bar-text"> <img src="aol.png" alt="aol logo" width="10px"/> AOL Instant Messenger</div>
                     <div className="title-bar-controls">
                         <button aria-label="Minimize"></button>
                         <button aria-label="Maximize"></button>
