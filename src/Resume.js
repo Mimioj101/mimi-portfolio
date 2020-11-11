@@ -18,7 +18,7 @@ class Resume extends React.Component {
 
     _dragStart(e) {
         // add 1 to z-index
-        console.log("Z INDEX", e.target.parentNode.style)
+        // console.log("Z INDEX", e.target.parentNode.style)
         // e.target.parentNode.style.zIndex++ 
         this.setState({
             diffX: e.screenX - e.currentTarget.getBoundingClientRect().left,

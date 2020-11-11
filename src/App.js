@@ -11,7 +11,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="container">
-        {/* <NavBar /> */}
+        <NavBar />
         <ContactMe />
         <Resume />
         <Paint />
