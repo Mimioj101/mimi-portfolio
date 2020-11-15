@@ -9,13 +9,13 @@ class NavBar extends React.Component {
     <Popup trigger={<button>START</button>} position="top left" >
       {close => (
         <div id="startMenu">
-          <button className="menuItem">LinkedIn</button>
+          <a href="https://www.linkedin.com/in/mimio/" target="_blank" rel="noreferrer noopener"><button className="menuItem">LinkedIn</button></a>
           <br/>
-          <button className="menuItem">GitHub</button>
+          <a href="https://github.com/Mimioj101" target="_blank" rel="noreferrer noopener"><button className="menuItem">GitHub</button></a>
           <br/>
-          <button className="menuItem">Medium</button>
+          <a href="https://medium.com/@mimioj" target="_blank" rel="noreferrer noopener"><button className="menuItem">Medium</button></a>
           <br/>
-          <button className="menuItem">Email Me</button>
+          <a href="mailto: mimioj@gmail.com"><button className="menuItem">Email</button></a>
         </div>
       )}
     </Popup>
