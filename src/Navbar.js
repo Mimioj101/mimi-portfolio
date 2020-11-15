@@ -1,5 +1,6 @@
 import React from "react"
 import Popup from 'reactjs-popup';
+import Clock from 'react-digital-clock';
 
 
 class NavBar extends React.Component {
@@ -20,17 +21,16 @@ class NavBar extends React.Component {
       )}
     </Popup>
   );
+
     
-    render() {
-        return(
-          <div id="navbar">
+  render() {
+      return(
+        <div id="navbar">
             {this.PopupExample()}
-            {/* <div id="notifications">
-                <div id="clock">CLOCK GOES HERE</div>
-            </div> */}
-          </div>
-        )
-    }
+            <Clock id="clock" />
+        </div>
+      )
+  }
 }
 
 export default NavBar;

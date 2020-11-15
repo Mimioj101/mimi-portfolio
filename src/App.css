@@ -51,6 +51,7 @@ body {
 }
 
 #navbar {
+	display: flex;
 	height: 26px;
 	background-color: rgb(192,192,192);
 	position: absolute;
@@ -58,6 +59,10 @@ body {
 	left: 0px;
 	right: 0px;
 	border-top: ridge 2px white;
+}
+
+#clock.style {
+	color: black;
 }
 
 #start {
