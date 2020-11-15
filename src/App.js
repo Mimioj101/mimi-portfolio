@@ -5,6 +5,7 @@ import Resume from './Resume.js'
 import NavBar from './Navbar.js'
 import IconsContainer from './IconsContainer.js'
 import Paint from './Paint.js'
+import AboutMe from './AboutMe.js'
 
 class App extends React.Component {
 
@@ -14,6 +15,7 @@ class App extends React.Component {
         <NavBar />
         <ContactMe />
         <Resume />
+        <AboutMe />
         <Paint />
         <IconsContainer />
       </div>

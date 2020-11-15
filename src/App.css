@@ -67,7 +67,7 @@ body {
 }
 
 #start {
-	background: url(http://zombiechops.com/wp-content/uploads/2016/07/icon.png) left center no-repeat;
+	background: url(http://3.bp.blogspot.com/_GHdkzvwFn7Y/TMYEWcRx23I/AAAAAAAAAAQ/M3oi_a8npz0/s1600/Windows_Vista_Icon_HD_by_magbanuamicah.png) left center no-repeat;
 	background-size: 17px 15px;
 	text-align: right;
 	font-weight: bolder;
@@ -89,7 +89,7 @@ body {
 	width: 164px;
 	background-color: rgb(192,192,192);
 	position: absolute;
-	display: block;
+	display: none;
 	border-top: ridge 3px white;
 	border-left: ridge 3px white;
 	border-bottom: ridge 2px black;
@@ -157,7 +157,7 @@ body {
 			color: white;
 		}
 
-.startRest {
+/* .startRest {
 	border-top: ridge 2px white;
 	border-left: ridge 2px white;
 	border-bottom: ridge 2px black;
@@ -169,9 +169,9 @@ body {
 	border-left: inset 2px black;
 	border-bottom: inset 2px white;
 	border-right: inset 2px white;
-}
+} */
 
-#notifications {
+/* #notifications {
 	margin-right: 2px;
 	border-top: inset 2px grey;
 	border-left: inset 2px grey;
@@ -182,23 +182,23 @@ body {
 	float: right;
 	width: 52px;
 	height: 21px;
-}
+} */
 
-#desktop {
+/* #desktop {
 	height: calc(100% - 26px);
 	background-color: transparent;
 	width: 100%;
 	padding: 10px;
-}
+} */
 
-#clock {
+/* #clock {
 	display: inline-block;
 	float: right;
 	margin-top: -13px;
 	font-size: 8px;
-}
+} */
 
-.desktopIcon {
+/* .desktopIcon {
 	margin: 2px 7px;
 	display: block;
 	height: 68px;
@@ -207,15 +207,15 @@ body {
 	vertical-align: bottom;
 	font-size: 10px;
 	color: white;
-}
+} */
 
-#mycomputer {
+/* #mycomputer {
 	background-color: transparent;
-}
+} */
 
-.divider{
+/* .divider{
 	height:1px;
 	border-top: ridge 1px white;
 	border-bottom: ridge 1px grey;
 	margin: 2px ;
-}
+} */
