@@ -9,6 +9,11 @@ import AboutMe from './AboutMe.js'
 
 class App extends React.Component {
 
+  renderPaintModal = () => {
+    console.log("hello mimi")
+    return <Paint />
+  }
+
   render() {
     return (
       <div className="container">
@@ -16,8 +21,8 @@ class App extends React.Component {
         <ContactMe />
         <Resume />
         <AboutMe />
-        <Paint />
-        <IconsContainer />
+        {this.renderPaintModal()}
+        <IconsContainer renderPaintModal={this.renderPaintModal} />
       </div>
     );
   }

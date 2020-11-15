@@ -51,7 +51,6 @@ class Paint extends React.Component {
     }
 
     closeModal = (e) => {
-        console.log(e)
         this.setState({showModal: false})
     }
 
