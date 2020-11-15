@@ -22,8 +22,8 @@ body {
 #resume-window {
 	position: absolute;
 	width: 517px;
-	top: 50px;
-	left: 700px;
+	top: 30px;
+	left: 750px;
 	z-index: 1;
 }
 
@@ -44,6 +44,13 @@ body {
 	width: 200px;
 	height: 600px;
 	z-index: -5;
+}
+
+#about-me-window {
+	position: absolute;
+	width: 200px;
+	top: 150px;
+	left: 520px;
 }
 
 /* #navbar {
