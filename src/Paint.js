@@ -8,7 +8,8 @@ class Paint extends React.Component {
             diffX: 0,
             diffY: 0,
             dragging: false,
-            styles: {}
+            styles: {},
+            showModal: true
         }
 
         this._dragStart = this._dragStart.bind(this);
@@ -49,21 +50,37 @@ class Paint extends React.Component {
         });
     }
 
+    closeModal = (e) => {
+        console.log(e)
+        this.setState({showModal: false})
+    }
+
+    renderModal = () => {
+        if (this.state.showModal === true) {
+            return(
+                <div className="window" id="paint-window" style={this.state.styles} onMouseDown={this._dragStart} onMouseMove={this._dragging} onMouseUp={this._dragEnd}>
+                    <div className="title-bar">
+                        <div className="title-bar-text"><img src="paint.png" alt="Paint" width="12px"/> Paint</div>
+                        <div className="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <button aria-label="Close" onClick={this.closeModal}></button>
+                        </div>
+                    </div>
+                    <div className="window-body">
+                        <iframe src="https://jspaint.app" title="Paint Window" height="400" width="650"></iframe>
+                    </div>
+                </div>
+            )
+        }
+    }
+
   render() {
+      console.log(this.state)
     return (
-        <div className="window" id="paint-window" style={this.state.styles} onMouseDown={this._dragStart} onMouseMove={this._dragging} onMouseUp={this._dragEnd}>
-        <div className="title-bar">
-            <div className="title-bar-text"><img src="paint.png" alt="Paint" width="12px"/> Paint</div>
-            <div className="title-bar-controls">
-            <button aria-label="Minimize"></button>
-            <button aria-label="Maximize"></button>
-            <button aria-label="Close"></button>
-            </div>
+        <div>
+            {this.renderModal()}
         </div>
-        <div className="window-body">
-            <iframe src="https://jspaint.app" title="Paint Window" height="400" width="650"></iframe>
-        </div>
-    </div>
     );
   }
 }

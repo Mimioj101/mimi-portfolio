@@ -1,15 +1,31 @@
+import Modal from 'react-modal';
 import React from "react"
+import GWizModal from './GWizModal.js'
 
 
 
 class IconsContainer extends React.Component {
 
+  state = {
+    showModal: false
+  }
 
+  handleOpenModal () {
+    this.setState({ showModal: true });
+  }
+  
+  handleCloseModal () {
+    this.setState({ showModal: false });
+  }
 
   render() {
     return (
       <div id="icons-container">
-          <img src="computer.png" alt="Desktop Icon"/>
+          <img src="computer.png" alt="Desktop Icon" onClick={this.handleOpenModal}/>
+          <Modal 
+           isOpen={this.state.showModal}
+           contentLabel="Minimal Modal Example"
+        >Hello</Modal>
           <br/>
           <br/>
           <br/>
