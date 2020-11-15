@@ -6,44 +6,25 @@ class NavBar extends React.Component {
 
 
   PopupExample = () => (
-    <Popup trigger={<button>START</button>} position="top left">
+    <Popup trigger={<button>START</button>} position="top left" >
       {close => (
-        <div>
-          <button>LinkedIn</button>
+        <div id="startMenu">
+          <button className="menuItem">LinkedIn</button>
           <br/>
-          <button>GitHub</button>
+          <button className="menuItem">GitHub</button>
           <br/>
-          <button>Medium</button>
+          <button className="menuItem">Medium</button>
           <br/>
-          <button>Email Me</button>
+          <button className="menuItem">Email Me</button>
         </div>
       )}
     </Popup>
   );
     
     render() {
-      console.log(this.state)
         return(
           <div id="navbar">
             {this.PopupExample()}
-
-            {/* <div id="startMenu">
-                <div id="left">
-                    <div className="b">
-                        Windows
-                        <span className="num95">95</span>
-                    </div>
-                </div>
-                <div className="menuItem expander">Programs</div>
-                <div className="menuItem expander">Documents</div>
-                <div className="menuItem expander">Settings</div>
-                <div className="menuItem">Find</div>
-                <div className="menuItem">Help</div>
-                <div className="menuItem">Run</div>
-                <div className="divider"></div>
-                <div className="menuItem" id="shutdown">Sh<span>u</span>t Down</div>
-            </div> */}
-
             {/* <div id="notifications">
                 <div id="clock">CLOCK GOES HERE</div>
             </div> */}
