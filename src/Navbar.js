@@ -1,53 +1,39 @@
 import React from "react"
-let startMenu = document.querySelector('#startMenu')
-// let start = document.querySelector("#start")
+import Popup from 'reactjs-popup';
+
 
 class NavBar extends React.Component {
 
-  state = {
-    startDisplay: false
-  }
 
-// function startTime() {
-//     var today = new Date();
-//     var h = today.getHours();
-//     var m = today.getMinutes();
-//     var s = today.getSeconds();
-//     // add a zero in front of numbers<10
-//     m = checkTime(m);
-//     s = checkTime(s);
-//     var hd = h;
-//     $('#clock').html((hd = 0 ? "12" : hd > 12 ? hd - 12 : hd) + ":" + m + " " + (h < 12 ? "AM" : "PM"));
-//     t = setTimeout(function () { startTime() }, 500);
-// }
-
-// function checkTime(i) {
-//     if (i < 10) {
-//         i = "0" + i;
-//     }
-//     return i;
-// }
-
-  toggleMenu = () => {
-    console.log(startMenu, "DISPLAY:", startMenu.style.display)
-      // startMenu.style.display = 'block'
-      this.setState({startDisplay: !this.state.startDisplay})
-  }
+  PopupExample = () => (
+    <Popup trigger={<button>START</button>} position="top left">
+      {close => (
+        <div>
+          <button>LinkedIn</button>
+          <br/>
+          <button>GitHub</button>
+          <br/>
+          <button>Medium</button>
+          <br/>
+          <button>Email Me</button>
+        </div>
+      )}
+    </Popup>
+  );
     
     render() {
       console.log(this.state)
         return(
           <div id="navbar">
-            <div id="start" className="startRest" onClick={this.toggleMenu}>Start</div>
+            {this.PopupExample()}
 
-            <div id="startMenu">
+            {/* <div id="startMenu">
                 <div id="left">
                     <div className="b">
                         Windows
                         <span className="num95">95</span>
                     </div>
                 </div>
-
                 <div className="menuItem expander">Programs</div>
                 <div className="menuItem expander">Documents</div>
                 <div className="menuItem expander">Settings</div>
@@ -56,11 +42,11 @@ class NavBar extends React.Component {
                 <div className="menuItem">Run</div>
                 <div className="divider"></div>
                 <div className="menuItem" id="shutdown">Sh<span>u</span>t Down</div>
-            </div>
+            </div> */}
 
-            <div id="notifications">
+            {/* <div id="notifications">
                 <div id="clock">CLOCK GOES HERE</div>
-            </div>
+            </div> */}
           </div>
         )
     }

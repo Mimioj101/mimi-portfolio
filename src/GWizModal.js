@@ -1,6 +1,6 @@
 import React from "react"
 
-class Paint extends React.Component {
+class GWizModal extends React.Component {
     constructor(props) {
         super(props);
 
@@ -17,9 +17,6 @@ class Paint extends React.Component {
     }
 
     _dragStart(e) {
-        // add 1 to z-index
-        // console.log("Z INDEX", e.target.parentNode.style)
-        // e.target.parentNode.style.zIndex++ 
         this.setState({
             diffX: e.screenX - e.currentTarget.getBoundingClientRect().left,
             diffY: e.screenY - e.currentTarget.getBoundingClientRect().top,
@@ -28,7 +25,6 @@ class Paint extends React.Component {
     }
 
     _dragging(e) {
-
         if(this.state.dragging) {
             var left = e.screenX - this.state.diffX;
             var top = e.screenY - this.state.diffY;
@@ -51,9 +47,9 @@ class Paint extends React.Component {
 
   render() {
     return (
-        <div className="window" id="paint-window" style={this.state.styles} onMouseDown={this._dragStart} onMouseMove={this._dragging} onMouseUp={this._dragEnd}>
+        <div className="window" id="g-wiz-window" style={this.state.styles} onMouseDown={this._dragStart} onMouseMove={this._dragging} onMouseUp={this._dragEnd}>
         <div className="title-bar">
-            <div className="title-bar-text"><img src="paint.png" alt="Paint" width="12px"/> Paint</div>
+            <div className="title-bar-text"><img src="help.png" alt="Help" width="12px"/> G.Wiz</div>
             <div className="title-bar-controls">
             <button aria-label="Minimize"></button>
             <button aria-label="Maximize"></button>
@@ -61,11 +57,11 @@ class Paint extends React.Component {
             </div>
         </div>
         <div className="window-body">
-            <iframe src="https://jspaint.app" title="Paint Window" height="400" width="650"></iframe>
+            <p>G.Wiz Demo and Github Repos</p>
         </div>
     </div>
     );
   }
 }
 
-export default Paint;
+export default GWizModal;

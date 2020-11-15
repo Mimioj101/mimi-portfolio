@@ -56,7 +56,7 @@ class Resume extends React.Component {
                     
             <div className="window" id="resume-window" style={this.state.styles} onMouseDown={this._dragStart} onMouseMove={this._dragging} onMouseUp={this._dragEnd}>
                 <div className="title-bar">
-                    <div className="title-bar-text">Resume</div>
+                    <div className="title-bar-text"><img src="computer.png" alt="Resume" width="12px"/> Resume</div>
                     <div className="title-bar-controls">
                     <button aria-label="Minimize"></button>
                     <button aria-label="Maximize"></button>

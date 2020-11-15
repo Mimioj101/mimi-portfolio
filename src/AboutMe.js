@@ -49,7 +49,7 @@ class AboutMe extends React.Component {
         return(
             <div className="window" id="about-me-window" style={this.state.styles} onMouseDown={this._dragStart} onMouseMove={this._dragging} onMouseUp={this._dragEnd} >
                 <div className="title-bar">
-                    <div className="title-bar-text">About</div>
+                    <div className="title-bar-text"><img src="files.png" alt="About Me" width="12px"/> About</div>
                     <div className="title-bar-controls">
                         <button aria-label="Minimize"></button>
                         <button aria-label="Maximize"></button>
@@ -58,7 +58,13 @@ class AboutMe extends React.Component {
                 </div>
                 <div className="window-body">
                     <p>
-                        Hi, My name is Mimi Ojserkis and I am a full stack software engineer!
+                    Hi, My name is Mimi!
+                    <br/>
+                    <br/>
+                    I have a background in tech sales and I code in Javascript, React, Ruby, and Ruby on Rails to name a few.
+                    <br/>
+                    <br/>
+                    When I am not coding, I love brewing my own kombucha and experimenting with fermenting all sorts of things. I once ran a marathon and came in dead last!
                     </p>
                 </div>
             </div>

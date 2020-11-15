@@ -2,7 +2,6 @@ body {
 	color: #FFF; 
 	font-family: 'Saira', sans-serif; 
 	font-weight: 700;
-	/* background-image: url('https://i.imgur.com/dMIxDvE.png') */
 	background-image: url("http://getwallpapers.com/wallpaper/full/c/6/c/658422.jpg")
 }
 
@@ -49,18 +48,9 @@ body {
 #about-me-window {
 	position: absolute;
 	width: 200px;
-	top: 150px;
+	top: 55px;
 	left: 520px;
 }
-
-/* #navbar {
-	width: 100%;
-	position: absolute;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-} */
-
 
 
 #navbar {
@@ -136,13 +126,11 @@ body {
 		margin-right:5px;
 	}
 
-	#startMenu .menuItem:first-letter
-	{
+	#startMenu .menuItem:first-letter{
 		text-decoration:underline;
 	}
 	
-	#startMenu #shutdown:first-letter
-	{
+	#startMenu #shutdown:first-letter{
 		text-decoration:none;
 	}
 
@@ -163,66 +151,3 @@ body {
 			font-weight: 100 !important;
 			color: white;
 		}
-
-/* .startRest {
-	border-top: ridge 2px white;
-	border-left: ridge 2px white;
-	border-bottom: ridge 2px black;
-	border-right: ridge 2px black;
-}
-
-.startClick {
-	border-top: inset 2px black;
-	border-left: inset 2px black;
-	border-bottom: inset 2px white;
-	border-right: inset 2px white;
-} */
-
-/* #notifications {
-	margin-right: 2px;
-	border-top: inset 2px grey;
-	border-left: inset 2px grey;
-	border-bottom: inset 2px white;
-	border-right: inset 2px white;
-	padding-top: 17px;
-	display: inline-block;
-	float: right;
-	width: 52px;
-	height: 21px;
-} */
-
-/* #desktop {
-	height: calc(100% - 26px);
-	background-color: transparent;
-	width: 100%;
-	padding: 10px;
-} */
-
-/* #clock {
-	display: inline-block;
-	float: right;
-	margin-top: -13px;
-	font-size: 8px;
-} */
-
-/* .desktopIcon {
-	margin: 2px 7px;
-	display: block;
-	height: 68px;
-	width: 50px;
-	text-align: center;
-	vertical-align: bottom;
-	font-size: 10px;
-	color: white;
-} */
-
-/* #mycomputer {
-	background-color: transparent;
-} */
-
-/* .divider{
-	height:1px;
-	border-top: ridge 1px white;
-	border-bottom: ridge 1px grey;
-	margin: 2px ;
-} */

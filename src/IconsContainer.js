@@ -1,6 +1,10 @@
 import React from "react"
 
+
+
 class IconsContainer extends React.Component {
+
+
 
   render() {
     return (
@@ -19,12 +23,12 @@ class IconsContainer extends React.Component {
           <img src="trashcan.png" alt="Desktop Icon"/>
           <img src="email.png" alt="Desktop Icon"/>
           <img src="help.png" alt="Desktop Icon"/>
-          <img src="information.png" alt="Desktop Icon"/>
+          <img src="information.png" alt="Desktop Icon" />
           <img src="network.png" alt="Desktop Icon"/>
-          <img src="paint.png" alt="Desktop Icon"/>
-          <img src="search.png" alt="Desktop Icon"/>
-      </div>
-    );
+          <img src="paint.png" alt="Desktop Icon" />
+          <img src="search.png" alt="Desktop Icon" />
+    </div>
+    )
   }
 }
 
