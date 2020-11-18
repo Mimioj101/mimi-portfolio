@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Mimioj101.github.io/static/css/main.b4dfa5fa.chunk.css",
+    "main.js": "/Mimioj101.github.io/static/js/main.07b1f2e6.chunk.js",
+    "main.js.map": "/Mimioj101.github.io/static/js/main.07b1f2e6.chunk.js.map",
+    "runtime-main.js": "/Mimioj101.github.io/static/js/runtime-main.5c25f9b3.js",
+    "runtime-main.js.map": "/Mimioj101.github.io/static/js/runtime-main.5c25f9b3.js.map",
+    "static/js/2.6e1c2860.chunk.js": "/Mimioj101.github.io/static/js/2.6e1c2860.chunk.js",
+    "static/js/2.6e1c2860.chunk.js.map": "/Mimioj101.github.io/static/js/2.6e1c2860.chunk.js.map",
+    "static/js/3.345b91ed.chunk.js": "/Mimioj101.github.io/static/js/3.345b91ed.chunk.js",
+    "static/js/3.345b91ed.chunk.js.map": "/Mimioj101.github.io/static/js/3.345b91ed.chunk.js.map",
+    "index.html": "/Mimioj101.github.io/index.html",
+    "static/css/main.b4dfa5fa.chunk.css.map": "/Mimioj101.github.io/static/css/main.b4dfa5fa.chunk.css.map",
+    "static/js/2.6e1c2860.chunk.js.LICENSE.txt": "/Mimioj101.github.io/static/js/2.6e1c2860.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5c25f9b3.js",
+    "static/js/2.6e1c2860.chunk.js",
+    "static/css/main.b4dfa5fa.chunk.css",
+    "static/js/main.07b1f2e6.chunk.js"
+  ]
+}
